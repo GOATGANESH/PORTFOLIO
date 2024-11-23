@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PortFolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(2, 5, 43);
+        color: white;
+        font-family: "Poppins";
+        overflow-x: hidden;
+
+
+        /* background-image:linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("bodybackground.jpg"); */
+        /* background-repeat: no-repeat;
+        background-size:cover;
+        background-blend-mode: overlay; */
+       
+      }
+
+      .Name {
+        color: rgb(60, 219, 116);
+      }
+      .Developer {
+        color: rgb(206, 198, 85);
+      }
+      #element {
+        color: rgb(206, 198, 85);
+      }
+      #horizontal-line {
+        border: 0;
+        background-color: rgb(82, 195, 186);
+        margin: 80px;
+        height: 3px;
+      }
+      #secondSection-start-line{
+        color: rgba(220, 245, 240, 0.559);
+        font-size: 1.3rem;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="top-left">GANESH PORTFOLIO</div>
+        <div class="top-right">
+          <ul>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          Well,My Name is <span class="Name">Ganesh</span>
+          <div>
+            I Call Myself As a <br />
+            <!-- <div class="Developer">Web Developer</div> -->
+            <span id="element"></span>
+          </div>
+          
+        </div>
+        <div class="rightSection">
+          <img src="second-developer.png" alt="Developer" width="" />
+        </div>
+      </section>
+
+      <hr id="horizontal-line" />
+
+
+
+      <section class="secondSection">
+        <span id="secondSection-start-line">Lots of Things Done...</span>
+        <h1>Work Experience</h1>
+        <div class="timeline">
+
+          <div class="vertical-lines">
+            <img class="vertical-lines-image" src="html.png" alt="Developer">
+            <div class="heading">HTML DEVELOPER </div>
+            <div class="description">Passionate HTML Developer with a strong foundation in creating clean, responsive, and user-friendly web pages. Skilled in crafting semantic HTML structures, ensuring accessibility, and collaborating effectively to deliver exceptional digital experiences</div>
+          </div>
+
+          <div class="vertical-lines">  <img class="vertical-lines-image" src="java.png" alt="Developer">
+            <div class="heading">JAVA DEVELOPER </div>
+            <div class="description">Dedicated Java Developer with expertise in building robust, scalable, and efficient applications. Proficient in core Java, OOP principles, and advanced concepts, delivering clean, maintainable code for innovative software solutions.</div>
+          </div>
+
+          <div class="vertical-lines">  <img class="vertical-lines-image" src="python.png" alt="Developer">
+            <div class="heading">PYTHON DEVELOPER </div>
+            <div class="description">Versatile Python Developer skilled in writing efficient, clean, and scalable code. Proficient in Python frameworks, data analysis, and automation, committed to delivering innovative solutions for diverse development challenges.</div>
+
+          </div>
+
+          <div class="vertical-lines">  <img class="vertical-lines-image" src="javascript.png" alt="Developer">
+            <div class="heading">JAVASCRIPT DEVELOPER </div>
+            <div class="description">Creative JavaScript Developer with expertise in building dynamic, interactive web applications. Skilled in modern frameworks, DOM manipulation, and problem-solving to deliver seamless user experiences and responsive designs.</div>
+
+          </div>
+
+          <div class="vertical-lines">  <img class="vertical-lines-image" src="android.png" alt="Developer">
+            <div class="heading">ANDROID DEVELOPER </div>
+            <div class="description">"Proficient Android Developer skilled in building intuitive, high-performance mobile applications. Experienced in Android SDK, UI/UX design, and integrating APIs to deliver seamless and engaging user experiences.</div>
+
+          </div>
+          
+        </div>
+      </section>
+
+
+    </main>
+
+    <footer>
+
+      <div class="container">
+        <div class="footer-first">
+          <h2 id="footer-social-media">Social-Media</h2>
+          <ul>
+            <li>Instagram - coderganesh231</li>
+            <li>Linkedin - Ganesh Tidke</li>
+            <li>Whatsapp - 7448087631</li>
+          </ul>
+        </div>
+        <div class="footer-second">
+          <span id="footer-address"> Address </span>
+         <div> Office No.231,<br>Ganesh Road,<br>A.P.Dhondgavhan,Tal-Chandwad,dist-Nashik</div>
+        </div>
+        <div class="footer-third">
+          <h3>FeedBack</h3>
+          <input type="text"><br>
+           <button>Submit</button>
+        </div>
+      </div>
+
+    </footer>
+    
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web Developer", "Java Developer", "Video Editor"],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
